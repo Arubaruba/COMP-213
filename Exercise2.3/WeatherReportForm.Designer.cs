@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.customerName = new System.Windows.Forms.TextBox();
-            this.sunnyWeather = new System.Windows.Forms.RadioButton();
+            this.rainingWeather = new System.Windows.Forms.RadioButton();
             this.weatherSelectionGroup = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.cloudyWeather = new System.Windows.Forms.RadioButton();
+            this.snowingWeather = new System.Windows.Forms.RadioButton();
+            this.sunnyWeather = new System.Windows.Forms.RadioButton();
             this.generateReport = new System.Windows.Forms.Button();
             this.help = new System.Windows.Forms.Label();
             this.enterNameTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.errorLabel = new System.Windows.Forms.Label();
+            this.personalizedWeatherInfo = new System.Windows.Forms.Label();
             this.weatherSelectionGroup.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,61 +51,61 @@
             this.customerName.TabIndex = 0;
             this.enterNameTooltip.SetToolTip(this.customerName, "Your full name: ie. John Smith");
             // 
-            // sunnyWeather
+            // rainingWeather
             // 
-            this.sunnyWeather.AutoSize = true;
-            this.sunnyWeather.Location = new System.Drawing.Point(6, 42);
-            this.sunnyWeather.Name = "sunnyWeather";
-            this.sunnyWeather.Size = new System.Drawing.Size(47, 17);
-            this.sunnyWeather.TabIndex = 3;
-            this.sunnyWeather.TabStop = true;
-            this.sunnyWeather.Text = "Rain";
-            this.sunnyWeather.UseVisualStyleBackColor = true;
+            this.rainingWeather.AutoSize = true;
+            this.rainingWeather.Location = new System.Drawing.Point(6, 42);
+            this.rainingWeather.Name = "rainingWeather";
+            this.rainingWeather.Size = new System.Drawing.Size(61, 17);
+            this.rainingWeather.TabIndex = 3;
+            this.rainingWeather.TabStop = true;
+            this.rainingWeather.Text = "Raining";
+            this.rainingWeather.UseVisualStyleBackColor = true;
             // 
             // weatherSelectionGroup
             // 
-            this.weatherSelectionGroup.Controls.Add(this.radioButton3);
-            this.weatherSelectionGroup.Controls.Add(this.radioButton2);
-            this.weatherSelectionGroup.Controls.Add(this.radioButton1);
+            this.weatherSelectionGroup.Controls.Add(this.cloudyWeather);
+            this.weatherSelectionGroup.Controls.Add(this.snowingWeather);
             this.weatherSelectionGroup.Controls.Add(this.sunnyWeather);
+            this.weatherSelectionGroup.Controls.Add(this.rainingWeather);
             this.weatherSelectionGroup.Location = new System.Drawing.Point(12, 66);
             this.weatherSelectionGroup.Name = "weatherSelectionGroup";
             this.weatherSelectionGroup.Size = new System.Drawing.Size(248, 76);
             this.weatherSelectionGroup.TabIndex = 5;
             this.weatherSelectionGroup.TabStop = false;
             // 
-            // radioButton3
+            // cloudyWeather
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(67, 42);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(57, 17);
-            this.radioButton3.TabIndex = 7;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Cloudy";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.cloudyWeather.AutoSize = true;
+            this.cloudyWeather.Location = new System.Drawing.Point(67, 42);
+            this.cloudyWeather.Name = "cloudyWeather";
+            this.cloudyWeather.Size = new System.Drawing.Size(57, 17);
+            this.cloudyWeather.TabIndex = 7;
+            this.cloudyWeather.TabStop = true;
+            this.cloudyWeather.Text = "Cloudy";
+            this.cloudyWeather.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // snowingWeather
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(67, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(52, 17);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Snow";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.snowingWeather.AutoSize = true;
+            this.snowingWeather.Location = new System.Drawing.Point(67, 19);
+            this.snowingWeather.Name = "snowingWeather";
+            this.snowingWeather.Size = new System.Drawing.Size(66, 17);
+            this.snowingWeather.TabIndex = 6;
+            this.snowingWeather.TabStop = true;
+            this.snowingWeather.Text = "Snowing";
+            this.snowingWeather.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // sunnyWeather
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(55, 17);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Sunny";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.sunnyWeather.AutoSize = true;
+            this.sunnyWeather.Location = new System.Drawing.Point(6, 19);
+            this.sunnyWeather.Name = "sunnyWeather";
+            this.sunnyWeather.Size = new System.Drawing.Size(55, 17);
+            this.sunnyWeather.TabIndex = 5;
+            this.sunnyWeather.TabStop = true;
+            this.sunnyWeather.Text = "Sunny";
+            this.sunnyWeather.UseVisualStyleBackColor = true;
             // 
             // generateReport
             // 
@@ -134,11 +135,21 @@
             this.errorLabel.Size = new System.Drawing.Size(0, 13);
             this.errorLabel.TabIndex = 8;
             // 
+            // personalizedWeatherInfo
+            // 
+            this.personalizedWeatherInfo.AutoSize = true;
+            this.personalizedWeatherInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.personalizedWeatherInfo.Location = new System.Drawing.Point(9, 238);
+            this.personalizedWeatherInfo.Name = "personalizedWeatherInfo";
+            this.personalizedWeatherInfo.Size = new System.Drawing.Size(0, 20);
+            this.personalizedWeatherInfo.TabIndex = 9;
+            // 
             // WeatherReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 559);
+            this.Controls.Add(this.personalizedWeatherInfo);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.help);
             this.Controls.Add(this.generateReport);
@@ -156,15 +167,16 @@
         #endregion
 
         private System.Windows.Forms.TextBox customerName;
-        private System.Windows.Forms.RadioButton sunnyWeather;
+        private System.Windows.Forms.RadioButton rainingWeather;
         private System.Windows.Forms.GroupBox weatherSelectionGroup;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton sunnyWeather;
+        private System.Windows.Forms.RadioButton snowingWeather;
+        private System.Windows.Forms.RadioButton cloudyWeather;
         private System.Windows.Forms.Button generateReport;
         private System.Windows.Forms.Label help;
         private System.Windows.Forms.ToolTip enterNameTooltip;
         private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.Label personalizedWeatherInfo;
     }
 }
 

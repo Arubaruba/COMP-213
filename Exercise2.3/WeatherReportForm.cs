@@ -62,9 +62,8 @@ namespace Exercise2._3
             // Only continue if no errors have been found
             if (!foundError)
             {
-
-            } 
-
+                personalizedWeatherInfo.Text = "Looks like it's " + selectedWeatherType.Text.ToLower() + " today, " + customerName.Text + ".";
+            }
         }
     }
 }
