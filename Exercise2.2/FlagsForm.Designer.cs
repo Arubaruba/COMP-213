@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.countryFlagPictureBox = new System.Windows.Forms.PictureBox();
             this.countryNameLabel = new System.Windows.Forms.Label();
             this.printButton = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.showProgrammerNameCheckBox = new System.Windows.Forms.CheckBox();
             this.formTitleLabel = new System.Windows.Forms.Label();
             this.developerNameLabel = new System.Windows.Forms.LinkLabel();
+            this.defaultToolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.countryFlagPictureBox)).BeginInit();
             this.countriesGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +57,7 @@
             this.countryFlagPictureBox.Size = new System.Drawing.Size(200, 136);
             this.countryFlagPictureBox.TabIndex = 1;
             this.countryFlagPictureBox.TabStop = false;
+            this.defaultToolTip.SetToolTip(this.countryFlagPictureBox, "Flag of the Selected Country");
             // 
             // countryNameLabel
             // 
@@ -67,6 +70,7 @@
             this.countryNameLabel.TabIndex = 5;
             this.countryNameLabel.Text = "US";
             this.countryNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.defaultToolTip.SetToolTip(this.countryNameLabel, "Name of the Selected Country");
             // 
             // printButton
             // 
@@ -75,6 +79,7 @@
             this.printButton.Size = new System.Drawing.Size(75, 23);
             this.printButton.TabIndex = 8;
             this.printButton.Text = "Print";
+            this.defaultToolTip.SetToolTip(this.printButton, "Send the Flag and Country name to Printer");
             this.printButton.UseVisualStyleBackColor = true;
             this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
@@ -85,6 +90,7 @@
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 9;
             this.cancelButton.Text = "Cancel";
+            this.defaultToolTip.SetToolTip(this.cancelButton, "Close this window");
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
@@ -197,6 +203,7 @@
             this.formTitleLabel.Size = new System.Drawing.Size(168, 29);
             this.formTitleLabel.TabIndex = 14;
             this.formTitleLabel.Text = "National Flags";
+            this.defaultToolTip.SetToolTip(this.formTitleLabel, "Form Title");
             // 
             // developerNameLabel
             // 
@@ -207,6 +214,7 @@
             this.developerNameLabel.TabIndex = 15;
             this.developerNameLabel.TabStop = true;
             this.developerNameLabel.Text = "Developed by Andreas Stocker";
+            this.defaultToolTip.SetToolTip(this.developerNameLabel, "Click to view his Github Profile");
             this.developerNameLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.developerNameLabel_LinkClicked);
             // 
             // FlagsForm
@@ -250,6 +258,7 @@
         private System.Windows.Forms.CheckBox showProgrammerNameCheckBox;
         private System.Windows.Forms.Label formTitleLabel;
         private System.Windows.Forms.LinkLabel developerNameLabel;
+        private System.Windows.Forms.ToolTip defaultToolTip;
     }
 }
 
