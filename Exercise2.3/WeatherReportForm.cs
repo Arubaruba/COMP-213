@@ -43,25 +43,39 @@ namespace Exercise2._3
             var selectedWeatherType = weatherSelectionGroup.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
 
             bool foundError = false;
-            errorLabel.Text = "";
 
             // Make sure the customer entered their name
             if (customerName.Text.Length == 0)
             {
-                errorLabel.Text += "Enter your name. ";
+                System.Windows.Forms.MessageBox.Show("Enter your name.");
                 foundError = true;
             }
-
             // Make sure a weather type is selected
-            if (selectedWeatherType == null)
+            else if (selectedWeatherType == null)
             {
-                errorLabel.Text += "Select a weather Type. ";
+                // Make sure a weather type is selected
+                System.Windows.Forms.MessageBox.Show("Select a weather Type.");
                 foundError = true;
             }
 
             // Only continue if no errors have been found
             if (!foundError)
             {
+                switch (selectedWeatherType.Name)
+                {
+                    case "sunnyWeather":
+                        pictureBox1.Image = global::Exercise2._3.WeatherImages.sunny;
+                        break;
+                    case "rainingWeather":
+                        pictureBox1.Image = global::Exercise2._3.WeatherImages.raining;
+                        break;
+                    case "cloudyWeather":
+                        pictureBox1.Image = global::Exercise2._3.WeatherImages.cloudy;
+                        break;
+                    case "snowingWeather":
+                        pictureBox1.Image = global::Exercise2._3.WeatherImages.snowing;
+                        break;
+                }
                 personalizedWeatherInfo.Text = "Looks like it's " + selectedWeatherType.Text.ToLower() + " today, " + customerName.Text + ".";
             }
         }

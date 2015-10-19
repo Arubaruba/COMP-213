@@ -38,7 +38,6 @@
             this.generateReport = new System.Windows.Forms.Button();
             this.help = new System.Windows.Forms.Label();
             this.enterNameTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.errorLabel = new System.Windows.Forms.Label();
             this.personalizedWeatherInfo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.weatherSelectionGroup.SuspendLayout();
@@ -128,29 +127,21 @@
             this.help.TabIndex = 7;
             this.help.Text = "Please enter your name and select a weather type then press \"Generate Report\".";
             // 
-            // errorLabel
-            // 
-            this.errorLabel.AutoSize = true;
-            this.errorLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorLabel.Location = new System.Drawing.Point(12, 194);
-            this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(0, 13);
-            this.errorLabel.TabIndex = 8;
-            // 
             // personalizedWeatherInfo
             // 
             this.personalizedWeatherInfo.AutoSize = true;
             this.personalizedWeatherInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.personalizedWeatherInfo.Location = new System.Drawing.Point(9, 238);
+            this.personalizedWeatherInfo.Location = new System.Drawing.Point(14, 185);
             this.personalizedWeatherInfo.Name = "personalizedWeatherInfo";
             this.personalizedWeatherInfo.Size = new System.Drawing.Size(0, 20);
             this.personalizedWeatherInfo.TabIndex = 9;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 194);
+            this.pictureBox1.Image = global::Exercise2._3.WeatherImages.cloudy;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 235);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 256);
+            this.pictureBox1.Size = new System.Drawing.Size(503, 319);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -158,10 +149,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 559);
+            this.ClientSize = new System.Drawing.Size(534, 566);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.personalizedWeatherInfo);
-            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.help);
             this.Controls.Add(this.generateReport);
             this.Controls.Add(this.weatherSelectionGroup);
@@ -187,7 +177,6 @@
         private System.Windows.Forms.Button generateReport;
         private System.Windows.Forms.Label help;
         private System.Windows.Forms.ToolTip enterNameTooltip;
-        private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.Label personalizedWeatherInfo;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

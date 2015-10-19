@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WeatherImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeatherImages.resx</DependentUpon>
+    </Compile>
     <Compile Include="WeatherReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +57,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="WeatherImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WeatherImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="WeatherReportForm.resx">
       <DependentUpon>WeatherReportForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +89,7 @@
   <ItemGroup>
     <Content Include="cloudy.jpg" />
     <Content Include="raining.jpg" />
+    <None Include="Resources\Image1.jpg" />
     <Content Include="snowing.jpg" />
     <Content Include="sunny.jpg" />
   </ItemGroup>
