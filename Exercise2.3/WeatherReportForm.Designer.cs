@@ -40,7 +40,9 @@
             this.enterNameTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.errorLabel = new System.Windows.Forms.Label();
             this.personalizedWeatherInfo = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.weatherSelectionGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // customerName
@@ -48,7 +50,7 @@
             this.customerName.Location = new System.Drawing.Point(12, 40);
             this.customerName.Name = "customerName";
             this.customerName.Size = new System.Drawing.Size(248, 20);
-            this.customerName.TabIndex = 0;
+            this.customerName.TabIndex = 5;
             this.enterNameTooltip.SetToolTip(this.customerName, "Your full name: ie. John Smith");
             // 
             // rainingWeather
@@ -57,7 +59,7 @@
             this.rainingWeather.Location = new System.Drawing.Point(6, 42);
             this.rainingWeather.Name = "rainingWeather";
             this.rainingWeather.Size = new System.Drawing.Size(61, 17);
-            this.rainingWeather.TabIndex = 3;
+            this.rainingWeather.TabIndex = 2;
             this.rainingWeather.TabStop = true;
             this.rainingWeather.Text = "Raining";
             this.rainingWeather.UseVisualStyleBackColor = true;
@@ -71,7 +73,7 @@
             this.weatherSelectionGroup.Location = new System.Drawing.Point(12, 66);
             this.weatherSelectionGroup.Name = "weatherSelectionGroup";
             this.weatherSelectionGroup.Size = new System.Drawing.Size(248, 76);
-            this.weatherSelectionGroup.TabIndex = 5;
+            this.weatherSelectionGroup.TabIndex = 3;
             this.weatherSelectionGroup.TabStop = false;
             // 
             // cloudyWeather
@@ -80,7 +82,7 @@
             this.cloudyWeather.Location = new System.Drawing.Point(67, 42);
             this.cloudyWeather.Name = "cloudyWeather";
             this.cloudyWeather.Size = new System.Drawing.Size(57, 17);
-            this.cloudyWeather.TabIndex = 7;
+            this.cloudyWeather.TabIndex = 3;
             this.cloudyWeather.TabStop = true;
             this.cloudyWeather.Text = "Cloudy";
             this.cloudyWeather.UseVisualStyleBackColor = true;
@@ -91,7 +93,7 @@
             this.snowingWeather.Location = new System.Drawing.Point(67, 19);
             this.snowingWeather.Name = "snowingWeather";
             this.snowingWeather.Size = new System.Drawing.Size(66, 17);
-            this.snowingWeather.TabIndex = 6;
+            this.snowingWeather.TabIndex = 1;
             this.snowingWeather.TabStop = true;
             this.snowingWeather.Text = "Snowing";
             this.snowingWeather.UseVisualStyleBackColor = true;
@@ -102,7 +104,7 @@
             this.sunnyWeather.Location = new System.Drawing.Point(6, 19);
             this.sunnyWeather.Name = "sunnyWeather";
             this.sunnyWeather.Size = new System.Drawing.Size(55, 17);
-            this.sunnyWeather.TabIndex = 5;
+            this.sunnyWeather.TabIndex = 0;
             this.sunnyWeather.TabStop = true;
             this.sunnyWeather.Text = "Sunny";
             this.sunnyWeather.UseVisualStyleBackColor = true;
@@ -112,7 +114,7 @@
             this.generateReport.Location = new System.Drawing.Point(12, 148);
             this.generateReport.Name = "generateReport";
             this.generateReport.Size = new System.Drawing.Size(248, 23);
-            this.generateReport.TabIndex = 6;
+            this.generateReport.TabIndex = 4;
             this.generateReport.Text = "Generate Report (Enter)";
             this.generateReport.UseVisualStyleBackColor = true;
             this.generateReport.Click += new System.EventHandler(this.generateReport_Click);
@@ -144,11 +146,20 @@
             this.personalizedWeatherInfo.Size = new System.Drawing.Size(0, 20);
             this.personalizedWeatherInfo.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 194);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(352, 256);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // WeatherReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 559);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.personalizedWeatherInfo);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.help);
@@ -159,6 +170,7 @@
             this.Text = "Weather Report";
             this.weatherSelectionGroup.ResumeLayout(false);
             this.weatherSelectionGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,6 +189,7 @@
         private System.Windows.Forms.ToolTip enterNameTooltip;
         private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.Label personalizedWeatherInfo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
