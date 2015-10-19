@@ -58,13 +58,12 @@
             // 
             // countryNameLabel
             // 
-            this.countryNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.countryNameLabel.AutoSize = true;
+            this.countryNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.countryNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.countryNameLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.countryNameLabel.Location = new System.Drawing.Point(335, 210);
+            this.countryNameLabel.Location = new System.Drawing.Point(256, 210);
             this.countryNameLabel.Name = "countryNameLabel";
-            this.countryNameLabel.Size = new System.Drawing.Size(46, 29);
+            this.countryNameLabel.Size = new System.Drawing.Size(200, 29);
             this.countryNameLabel.TabIndex = 5;
             this.countryNameLabel.Text = "US";
             this.countryNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
