@@ -40,7 +40,7 @@ namespace Exercise2._3
         private void generateReport_Click(object sender, EventArgs e)
         {
             // Search for a selected weather type
-            var selectedWeatherType = weatherSelectionGroup.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
+            RadioButton selectedWeatherType = weatherSelectionGroup.Controls.OfType<RadioButton>().FirstOrDefault(n => n.Checked);
 
             bool foundError = false;
 
