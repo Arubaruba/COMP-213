@@ -31,6 +31,7 @@ namespace Exercise2._2
         {
             countryNameLabel.Text = "India";
             countryFlagPictureBox.BackgroundImage = global::Exercise2._2.FlagImages.india;
+
         }
 
         private void usRadioButton_CheckedChanged(object sender, EventArgs e)

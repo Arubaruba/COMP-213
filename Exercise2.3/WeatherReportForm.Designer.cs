@@ -138,6 +138,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(12, 235);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(503, 319);
@@ -146,6 +147,7 @@
             // 
             // WeatherReportForm
             // 
+            this.AcceptButton = this.generateReport;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 566);

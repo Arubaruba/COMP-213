@@ -1,0 +1,9 @@
+C:\Users\Student\Documents\COMP-213\OrderForm\bin\Debug\Homework1-Orderform.exe.config
+C:\Users\Student\Documents\COMP-213\OrderForm\bin\Debug\Homework1-Orderform.exe
+C:\Users\Student\Documents\COMP-213\OrderForm\bin\Debug\Homework1-Orderform.pdb
+C:\Users\Student\Documents\COMP-213\OrderForm\obj\Debug\Orderform.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\COMP-213\OrderForm\obj\Debug\Homework1_Orderform.OrderForm.resources
+C:\Users\Student\Documents\COMP-213\OrderForm\obj\Debug\Homework1_Orderform.Properties.Resources.resources
+C:\Users\Student\Documents\COMP-213\OrderForm\obj\Debug\Orderform.csproj.GenerateResource.Cache
+C:\Users\Student\Documents\COMP-213\OrderForm\obj\Debug\Homework1-Orderform.exe
+C:\Users\Student\Documents\COMP-213\OrderForm\obj\Debug\Homework1-Orderform.pdb
