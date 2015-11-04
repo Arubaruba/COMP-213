@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Exercise4._3
 {
-    public partial class AccountBalance : Form
+    public partial class Account : Form
     {
-        enum TransactionType {Deposit, Check, ServiceCharge};
+         enum TransactionType {Deposit, Check, ServiceCharge};
 
         TransactionType transactionType = TransactionType.Deposit;
         Decimal total = 0;
-        public AccountBalance()
+        public Account()
         {
             InitializeComponent();
             updateTotal();
@@ -79,5 +79,15 @@ namespace Exercise4._3
             amountTextBox.Text = "";
         }
 
+
+        public Account()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

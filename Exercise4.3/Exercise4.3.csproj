@@ -44,16 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountBalance.cs">
+    <Compile Include="Account.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccountBalance.Designer.cs">
-      <DependentUpon>AccountBalance.cs</DependentUpon>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AccountBalance.resx">
-      <DependentUpon>AccountBalance.cs</DependentUpon>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
