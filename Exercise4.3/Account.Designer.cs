@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.components = new System.ComponentModel.Container();
+            this.paymentTypesGroupBox = new System.Windows.Forms.GroupBox();
+            this.serviceRadioButton = new System.Windows.Forms.RadioButton();
+            this.depositRadioButton = new System.Windows.Forms.RadioButton();
+            this.checkRadioButton = new System.Windows.Forms.RadioButton();
             this.amountLabel = new System.Windows.Forms.Label();
             this.totalLabel = new System.Windows.Forms.Label();
             this.amountTextBox = new System.Windows.Forms.TextBox();
@@ -36,85 +40,45 @@
             this.addButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
-            this.checkRadioButton = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.paymentTypesGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // paymentTypesGroupBox
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.checkRadioButton);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(468, 72);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Payment Types";
+            this.paymentTypesGroupBox.Controls.Add(this.serviceRadioButton);
+            this.paymentTypesGroupBox.Controls.Add(this.depositRadioButton);
+            this.paymentTypesGroupBox.Controls.Add(this.checkRadioButton);
+            this.paymentTypesGroupBox.Location = new System.Drawing.Point(13, 13);
+            this.paymentTypesGroupBox.Name = "paymentTypesGroupBox";
+            this.paymentTypesGroupBox.Size = new System.Drawing.Size(468, 72);
+            this.paymentTypesGroupBox.TabIndex = 0;
+            this.paymentTypesGroupBox.TabStop = false;
+            this.paymentTypesGroupBox.Text = "Payment Types";
             // 
-            // amountLabel
+            // serviceRadioButton
             // 
-            this.amountLabel.AutoSize = true;
-            this.amountLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.amountLabel.Location = new System.Drawing.Point(16, 171);
-            this.amountLabel.Name = "amountLabel";
-            this.amountLabel.Size = new System.Drawing.Size(43, 13);
-            this.amountLabel.TabIndex = 1;
-            this.amountLabel.Text = "Amount";
-            this.amountLabel.Click += new System.EventHandler(this.label1_Click);
+            this.serviceRadioButton.AutoSize = true;
+            this.serviceRadioButton.Location = new System.Drawing.Point(270, 29);
+            this.serviceRadioButton.Name = "serviceRadioButton";
+            this.serviceRadioButton.Size = new System.Drawing.Size(98, 17);
+            this.serviceRadioButton.TabIndex = 2;
+            this.serviceRadioButton.TabStop = true;
+            this.serviceRadioButton.Text = "Service Charge";
+            this.serviceRadioButton.UseVisualStyleBackColor = true;
+            this.serviceRadioButton.CheckedChanged += new System.EventHandler(this.serviceRadioButton_CheckedChanged);
             // 
-            // totalLabel
+            // depositRadioButton
             // 
-            this.totalLabel.AutoSize = true;
-            this.totalLabel.Location = new System.Drawing.Point(16, 203);
-            this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(31, 13);
-            this.totalLabel.TabIndex = 2;
-            this.totalLabel.Text = "Total";
-            // 
-            // amountTextBox
-            // 
-            this.amountTextBox.Location = new System.Drawing.Point(70, 164);
-            this.amountTextBox.Name = "amountTextBox";
-            this.amountTextBox.Size = new System.Drawing.Size(100, 20);
-            this.amountTextBox.TabIndex = 3;
-            // 
-            // totalTextBox
-            // 
-            this.totalTextBox.Location = new System.Drawing.Point(70, 200);
-            this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(100, 20);
-            this.totalTextBox.TabIndex = 4;
-            // 
-            // addButton
-            // 
-            this.addButton.Location = new System.Drawing.Point(176, 162);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
-            this.addButton.TabIndex = 5;
-            this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
-            // 
-            // exitButton
-            // 
-            this.exitButton.Location = new System.Drawing.Point(12, 276);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
-            this.exitButton.TabIndex = 6;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
-            // 
-            // clearButton
-            // 
-            this.clearButton.Location = new System.Drawing.Point(406, 276);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 23);
-            this.clearButton.TabIndex = 7;
-            this.clearButton.Text = "Clear";
-            this.clearButton.UseCompatibleTextRendering = true;
-            this.clearButton.UseVisualStyleBackColor = true;
+            this.depositRadioButton.AutoSize = true;
+            this.depositRadioButton.Location = new System.Drawing.Point(141, 29);
+            this.depositRadioButton.Name = "depositRadioButton";
+            this.depositRadioButton.Size = new System.Drawing.Size(61, 17);
+            this.depositRadioButton.TabIndex = 1;
+            this.depositRadioButton.TabStop = true;
+            this.depositRadioButton.Text = "Deposit";
+            this.depositRadioButton.UseVisualStyleBackColor = true;
+            this.depositRadioButton.CheckedChanged += new System.EventHandler(this.depositRadioButton_CheckedChanged);
             // 
             // checkRadioButton
             // 
@@ -127,27 +91,75 @@
             this.checkRadioButton.Text = "Check";
             this.checkRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // amountLabel
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(141, 29);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.amountLabel.AutoSize = true;
+            this.amountLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.amountLabel.Location = new System.Drawing.Point(16, 167);
+            this.amountLabel.Name = "amountLabel";
+            this.amountLabel.Size = new System.Drawing.Size(43, 13);
+            this.amountLabel.TabIndex = 0;
+            this.amountLabel.Text = "Amount";
+            this.amountLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // radioButton3
+            // totalLabel
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(270, 29);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.totalLabel.AutoSize = true;
+            this.totalLabel.Location = new System.Drawing.Point(16, 203);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(31, 13);
+            this.totalLabel.TabIndex = 3;
+            this.totalLabel.Text = "Total";
+            // 
+            // amountTextBox
+            // 
+            this.amountTextBox.Location = new System.Drawing.Point(70, 164);
+            this.amountTextBox.Name = "amountTextBox";
+            this.amountTextBox.Size = new System.Drawing.Size(100, 20);
+            this.amountTextBox.TabIndex = 1;
+            this.amountTextBox.TextChanged += new System.EventHandler(this.amountTextBox_TextChanged);
+            // 
+            // totalTextBox
+            // 
+            this.totalTextBox.Location = new System.Drawing.Point(70, 200);
+            this.totalTextBox.Name = "totalTextBox";
+            this.totalTextBox.ReadOnly = true;
+            this.totalTextBox.Size = new System.Drawing.Size(100, 20);
+            this.totalTextBox.TabIndex = 4;
+            // 
+            // addButton
+            // 
+            this.addButton.Location = new System.Drawing.Point(176, 162);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 2;
+            this.addButton.Text = "Add";
+            this.toolTip1.SetToolTip(this.addButton, "Add a new transaction");
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(406, 276);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 6;
+            this.exitButton.Text = "Exit";
+            this.toolTip1.SetToolTip(this.exitButton, "Exit this Application");
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(13, 276);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 5;
+            this.clearButton.Text = "Clear";
+            this.toolTip1.SetToolTip(this.clearButton, "Reset the total amount");
+            this.clearButton.UseCompatibleTextRendering = true;
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // Account
             // 
@@ -161,11 +173,11 @@
             this.Controls.Add(this.amountTextBox);
             this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.amountLabel);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.paymentTypesGroupBox);
             this.Name = "Account";
             this.Text = "Account";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.paymentTypesGroupBox.ResumeLayout(false);
+            this.paymentTypesGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,7 +185,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox paymentTypesGroupBox;
         private System.Windows.Forms.Label amountLabel;
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.TextBox amountTextBox;
@@ -181,8 +193,9 @@
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton serviceRadioButton;
+        private System.Windows.Forms.RadioButton depositRadioButton;
         private System.Windows.Forms.RadioButton checkRadioButton;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

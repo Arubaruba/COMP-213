@@ -37,11 +37,6 @@ namespace Exercise4._3
             transactionType = TransactionType.Check;
         }
 
-        private void serviceCheckRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            transactionType = TransactionType.ServiceCharge;
-        }
-
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -79,15 +74,20 @@ namespace Exercise4._3
             amountTextBox.Text = "";
         }
 
-
-        public Account()
-        {
-            InitializeComponent();
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void serviceRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            transactionType = TransactionType.ServiceCharge;
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            total = 0;
+            updateTotal();
         }
     }
 }

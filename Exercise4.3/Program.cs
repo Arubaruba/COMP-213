@@ -16,7 +16,7 @@ namespace Exercise4._3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AccountBalance());
+            Application.Run(new Account());
         }
     }
 }
