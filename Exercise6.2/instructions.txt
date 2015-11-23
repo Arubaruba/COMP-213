@@ -1,0 +1,43 @@
+Create a project that will produce a summary of the amounts due for Pat’s
+Auto Repair Shop. Display a splash screen first; then display the Job
+ Information form. If you wish, you can add a graphic to the form.
+ The Job Information Form Menu :
+File Edit Help
+ Exit Calculate About
+ Clear
+Job Information Form : The Job Information form must have text boxes for
+the user to enter the job number, customer name, amount charged for
+6.2
+
+parts, and the hours of labor. Include labels and text boxes for Parts,
+ Labor, Subtotal, Sales Tax, and Total.
+ The Calculate menu item finds the charges and displays them in labels.
+The tax rate and the hourly labor charge should be set up as named constants
+so that they can be easily modified if either changes. Current
+charges are $50 per hour for labor and 8 percent (.08) for the sales tax
+rate. Sales tax is charged only on parts, not on labor.
+ The Clear menu item clears the text boxes and resets the focus in the
+first text box. 
+
+
+6.3
+
+Modify Programming Exercise 6.2 so that summary information is maintained
+for the total dollar amount for parts, labor, sales tax, and total for
+all customers. 
+Add a Summary menu item under the File menu before the Exit item;
+include a separator bar between the two menu items. When the user selects
+the Summary menu item, display the summary information in a Summary
+form. The Summary form should have an OK button that closes the
+Summary form and returns the user to the Job Information form
+
+
+Pick two of the programming exercises on page 290-292 in the book and implement
+them. Note these projects are extensions to the projects that are introduced on page
+253-257. Requirements:
+1) Use appropriate names for all the controls
+2) Use appropriate names for all the variables
+3) Use appropriate comments throughout the code
+4) Be creative in the design of the interface
+3 Task 2
+During class time, after the deadline, demo your solution.
