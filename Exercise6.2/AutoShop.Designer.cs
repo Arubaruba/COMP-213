@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +53,7 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.totalTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,14 +96,16 @@
             // calculateToolStripMenuItem1
             // 
             this.calculateToolStripMenuItem1.Name = "calculateToolStripMenuItem1";
-            this.calculateToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.calculateToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
+            this.calculateToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.calculateToolStripMenuItem1.Text = "Calculate";
             this.calculateToolStripMenuItem1.Click += new System.EventHandler(this.calculateToolStripMenuItem1_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clearToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.L)));
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.clearToolStripMenuItem.Text = "Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
@@ -116,8 +120,10 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // jobNumberLabel
             // 
@@ -173,7 +179,6 @@
             this.hoursOfLaborTextBox.Name = "hoursOfLaborTextBox";
             this.hoursOfLaborTextBox.Size = new System.Drawing.Size(100, 20);
             this.hoursOfLaborTextBox.TabIndex = 8;
-            this.hoursOfLaborTextBox.TextChanged += new System.EventHandler(this.hoursOfLaborTextBox_TextChanged);
             // 
             // hoursOfLaborLabel
             // 
@@ -225,6 +230,7 @@
             this.calculateButton.Size = new System.Drawing.Size(75, 23);
             this.calculateButton.TabIndex = 13;
             this.calculateButton.Text = "Calculate";
+            this.toolTip1.SetToolTip(this.calculateButton, "Calculate Charges");
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
@@ -235,6 +241,7 @@
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 14;
             this.clearButton.Text = "Clear";
+            this.toolTip1.SetToolTip(this.clearButton, "Reset Fields");
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
@@ -314,6 +321,7 @@
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.TextBox totalTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
