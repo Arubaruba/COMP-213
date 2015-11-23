@@ -14,6 +14,9 @@ namespace Exercise6._2
     {
         const decimal laborCostPerHour = 50;
         const decimal salesTax = 0.08M;
+
+        decimal summaryLabor = 0, summaryParts = 0, summarySalesTax = 0, summaryTotal = 0;
+
         public AutoShop()
         {
             InitializeComponent();
@@ -76,6 +79,13 @@ namespace Exercise6._2
                     return;
                 }
 
+                // Update summary info
+                summaryLabor += hoursOfLabor * laborCostPerHour;
+                summaryParts += amountChargedForParts;
+                summarySalesTax += salesTax;
+                summaryTotal += hoursOfLabor * laborCostPerHour + amountChargedForParts * (1 + salesTax);
+
+                // Update the readonly text fields
                 subtotalTextBox.Text = (hoursOfLabor * laborCostPerHour + amountChargedForParts).ToString("C");
                 salesTaxTextBox.Text = (amountChargedForParts * salesTax).ToString("C");
                 totalTextBox.Text = (hoursOfLabor * laborCostPerHour + amountChargedForParts * (1 + salesTax)).ToString("C");
@@ -108,6 +118,14 @@ namespace Exercise6._2
         {
             AboutAutoRepairShop about = new AboutAutoRepairShop();
             about.ShowDialog();
+        }
+
+        private void summaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String summaryText = "Total Labor Cost: " + summaryLabor.ToString("C") + "\nTotal Parts Cost: " + summaryParts.ToString("C") +
+                "\nTotal Sales Tax: " + summarySalesTax.ToString("C") + "\nTotal Cost: " + summaryTotal.ToString("C");
+
+            MessageBox.Show(summaryText, "Summary");
         }
 
     }
