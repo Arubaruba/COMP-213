@@ -1,0 +1,23 @@
+﻿7.1 Create a project that obtains student information, prints the data entered
+on the form, and prints a list of the schools in the list.
+The Form :
+ • Text boxes for entering the name and units completed.
+ • Radio buttons for Freshman, Sophomore, Junior, and Senior.
+ • Check box for Dean’s List.
+ • A list box for the following majors: Accounting, Business, Computer
+Information Systems, and Marketing.
+ • A simple combo box for the name of the high school—initially loaded
+with Franklin, Highland, Midtown, and West Highland. If the user
+types in a new school name, it should be added to the list. The list
+should be sorted.
+ • Print button that prints the data from the form. Include a title and
+identifying labels for the data. Use the Print Preview dialog box.
+ • An OK button that clears the entries from the form and resets the focus.
+The button should be the Accept button for the form.
+Menus : The File menu should have an item for Print Schools and Exit . The
+Edit menu should have an item for Add High School ; the Help menu should
+have an item for About that displays the About box. Include appropriate
+access keys on your menu items.
+ Note : Print your name at the top of the printer output for the schools
+and include a report title. Display the printer output in the Print Preview
+dialog box. 
