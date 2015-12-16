@@ -64,9 +64,6 @@
     <Compile Include="Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AboutAutoRepairShop.resx">
-      <DependentUpon>AboutAutoRepairShop.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AutoShop.resx">
       <DependentUpon>AutoShop.cs</DependentUpon>
     </EmbeddedResource>
