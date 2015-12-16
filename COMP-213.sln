@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2.3", "Exercise2.3\Exercise2.3.csproj", "{08003BE2-11AD-4E1A-AA2D-E8EF7DE9ACA0}"
 EndProject
@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise4.3", "Exercise4.3\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3.2", "Exercise3.2\Exercise3.2.csproj", "{72DC462A-5694-44C7-B569-D6AA5D649E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise6.2", "Exercise6.2\Exercise6.2.csproj", "{6F0128DA-C953-477B-ACE5-9CD52494D1A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3_Exercise6.2", "Exercise6.2\HW3_Exercise6.2.csproj", "{6F0128DA-C953-477B-ACE5-9CD52494D1A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise7.1", "Exercise7.1\Exercise7.1.csproj", "{93AB030C-13AC-4770-AFDF-83CA1559FDEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW4_Exercise7.1", "Exercise7.1\HW4_Exercise7.1.csproj", "{93AB030C-13AC-4770-AFDF-83CA1559FDEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

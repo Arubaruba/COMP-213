@@ -15,18 +15,9 @@ namespace Exercise7._1
         [STAThread]
         static void Main()
         {
-            using (var ds = new DataSet1())
-            {
-                
-                int count = ds.University.Count;
-                ds.University.AddUniversityRow(1, "MIT");
-                count = ds.University.Count;
-                ds.University.AddUniversityRow(1, "MIT");
-            }
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new StudentInfo());
         }
     }
 }
