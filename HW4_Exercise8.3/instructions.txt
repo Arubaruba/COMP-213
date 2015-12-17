@@ -1,0 +1,14 @@
+﻿8.3
+
+Create a project to keep track of concert ticket sales by your club. Ticket
+prices are based on the section of the auditorium in which the seats are
+located. Your program should calculate the price for each sale, accumulate
+the total number of tickets sold in each section, display the ticket
+price schedule, and print a summary of all sales.
+ The form should contain a list box of the sections for seating.
+
+Section Price
+ Orchestra 40.00
+ Mezzanine 27.50
+ General 15.00
+ Balcony 10.00 
