@@ -1,0 +1,12 @@
+﻿9.3
+Create a Web page for entering new customer information. The fields include
+name, e-mail, username, and password. Include a second text box
+to confirm the password. Set the TextMode property of the two password
+fields to “Password”. Use a table to lay out your controls.
+ Validate that all fields contain information. Display appropriate messages
+for any empty fields. Include a Submit button.
+ When all information is entered and the Submit button is pressed,
+compare the two password fields to see if they are equal. If not, clear both
+text boxes and display a message to reenter the password information.
+When the passwords match, display a message that says “Welcome” and
+the name of the customer. 
