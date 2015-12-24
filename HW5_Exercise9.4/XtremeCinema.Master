@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="XtremeCinema.Master.cs" Inherits="HW5_Exercise9._4.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Xtreme Cinema</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.5/css/foundation.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="callout">
+                <h1>Xtreme Cinema</h1>
+                <ul class="menu right">
+                    <li><a href="RentMovies.aspx">Rent Movies</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-8 columns">
+            <asp:ContentPlaceHolder ID="bodyContentPlaceholder" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="large-4 columns">
+            <div class="callout">
+                <h3>Latest Movie Releases</h3>
+
+                <p><a href="#">The Revenant</a></p>
+                <p><a href="#">The Hateful Eight</a></p>
+                <p><a href="#">Joy</a></p>
+                <p><a href="#">The Big Short</a></p>
+            </div>
+        </div>
+    </div>
+</body>

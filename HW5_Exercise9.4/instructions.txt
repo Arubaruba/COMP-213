@@ -1,0 +1,32 @@
+﻿9.4
+Create a Web page for a company of your choosing. Include multiple
+pages, a HyperLink control, and validator controls. 
+
+Xtreme Cinema
+Design and code a project to calculate the amount due
+for rentals. Movies may be in Blu-Ray (BD) format or
+DVD format. BD rent for $5.00 each and DVDs rent
+for $4.50. New releases are $1 additional charge.
+ On the form include a text box to input the movie
+title and radio buttons to indicate whether the movie
+is in DVD or BD format. Use one check box to indicate
+whether the person is a member; members receive
+a 10 percent discount. Another check box
+indicates a new release.
+
+ Use buttons for Calculate , Clear for Next Item , Order
+Complete , Summary , and Exit . The Calculate button
+should display the item amount and add to the subtotal.
+The Clear for Next Item clears the check box for new
+ releases, the movie title, and the radio buttons; the
+member check box cannot be changed until the current
+order is complete. Include validation to check for missing
+data. If the user clicks on the Calculate button without
+first entering the movie title and selecting the movie
+format, display a message box.
+ For the Order Complete button, first confirm the
+operation with the user and clear the controls on the
+form for a new customer.
+ The Summary button displays the number of customers
+and the sum of the rental amounts in a message
+box. Make sure to add to the custome
