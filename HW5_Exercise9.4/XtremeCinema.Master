@@ -6,6 +6,11 @@
 <head runat="server">
     <title>Xtreme Cinema</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.5/css/foundation.min.css" rel="stylesheet" />
+    <script>
+        function showSummaryAlert() {
+            alert("Number of rentals: <%=getNumOfRentals()%>\nTotal Rental Amount: <%=getTotalRentalAmount()%>\n");
+        }
+    </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -27,13 +32,21 @@
             <asp:ContentPlaceHolder ID="bodyContentPlaceholder" runat="server"></asp:ContentPlaceHolder>
         </div>
         <div class="large-4 columns">
-            <div class="callout">
-                <h3>Latest Movie Releases</h3>
+            <div class="row">
+                <div class="callout">
+                    <h3>Latest Movie Releases</h3>
 
-                <p><a href="#">The Revenant</a></p>
-                <p><a href="#">The Hateful Eight</a></p>
-                <p><a href="#">Joy</a></p>
-                <p><a href="#">The Big Short</a></p>
+                    <p><a href="#">The Revenant</a></p>
+                    <p><a href="#">The Hateful Eight</a></p>
+                    <p><a href="#">Joy</a></p>
+                    <p><a href="#">The Big Short</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="callout">
+                    <h3>Rental Summary</h3>
+                    <button class="button" onclick='showSummaryAlert()'>Show Rental Summary</button>
+                </div>
             </div>
         </div>
     </div>

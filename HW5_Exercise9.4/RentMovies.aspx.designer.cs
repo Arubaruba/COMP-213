@@ -22,6 +22,33 @@ namespace HW5_Exercise9._4 {
         protected global::System.Web.UI.HtmlControls.HtmlForm rentMovieForm;
         
         /// <summary>
+        /// movieTitleRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator movieTitleRequiredFieldValidator;
+        
+        /// <summary>
+        /// movieTitleTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox movieTitleTextBox;
+        
+        /// <summary>
+        /// newReleaseCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox newReleaseCheckBox;
+        
+        /// <summary>
         /// dvdFormat control.
         /// </summary>
         /// <remarks>
@@ -38,6 +65,15 @@ namespace HW5_Exercise9._4 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton bluerayFormat;
+        
+        /// <summary>
+        /// membershipCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox membershipCheckBox;
         
         /// <summary>
         /// totalCostLabel control.
