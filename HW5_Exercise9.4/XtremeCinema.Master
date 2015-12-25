@@ -32,22 +32,17 @@
             <asp:ContentPlaceHolder ID="bodyContentPlaceholder" runat="server"></asp:ContentPlaceHolder>
         </div>
         <div class="large-4 columns">
-            <div class="row">
-                <div class="callout">
-                    <h3>Latest Movie Releases</h3>
+            <div class="callout">
+                <h3>Latest Movie Releases</h3>
 
-                    <p><a href="#">The Revenant</a></p>
-                    <p><a href="#">The Hateful Eight</a></p>
-                    <p><a href="#">Joy</a></p>
-                    <p><a href="#">The Big Short</a></p>
-                </div>
+                <p><a href="#">The Revenant</a></p>
+                <p><a href="#">The Hateful Eight</a></p>
+                <p><a href="#">Joy</a></p>
+                <p><a href="#">The Big Short</a></p>
             </div>
-            <div class="row">
-                <div class="callout">
-                    <h3>Rental Summary</h3>
-                    <button class="button" onclick='showSummaryAlert()'>Show Rental Summary</button>
-                </div>
+            <div class="callout ">
+                <h3>Rental Summary</h3>
+                <button class="button" onclick='showSummaryAlert()'>Show Rental Summary</button>
             </div>
         </div>
-    </div>
 </body>

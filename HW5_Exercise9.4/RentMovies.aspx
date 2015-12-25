@@ -24,31 +24,26 @@
                 <div class="large-6 columns">
                     <label>&nbsp;</label>
                     <asp:CheckBox ID="newReleaseCheckBox" runat="server" />
-                    <label>New Release<i class="success">( $1 extra)</i></label>
+                    <asp:Label AssociatedControlID="newReleaseCheckBox" ID="newReleaseCheckBoxLabel" runat="server" Text="New Release"></asp:Label>
+                    <i>($1 extra)</i>
                 </div>
             </div>
             <div class="row">
                 <div class="large-6 columns">
                     <label>Movie Format</label>
                     <asp:RadioButton ID="dvdFormat" runat="server" Checked="True" GroupName="movieFormat" />
-                    <label>
-                        DVD
-                        <i>($4.50)</i>
-                    </label>
+                    <asp:Label AssociatedControlID="dvdFormat" ID="dvdFormatLabel" runat="server" Text="DVD"></asp:Label>
+                    <i>($4.50)</i>
                     <asp:RadioButton ID="bluerayFormat" runat="server" GroupName="movieFormat" />
-                    <label>
-                        Blueray
-                        <i>($5.00)</i>
-                    </label>
+                    <asp:Label AssociatedControlID="bluerayFormat" ID="bluerayFormatLabel" runat="server" Text="Blueray"></asp:Label>
+                    <i>($5.00)</i>
                 </div>
 
                 <div class="large-6 columns">
                     <label>&nbsp;</label>
                     <asp:CheckBox ID="membershipCheckBox" runat="server" />
-                    <label>
-                        Member
-                        <i>(10% off)</i>
-                    </label>
+                    <asp:Label AssociatedControlID="membershipCheckBox" ID="membershipCheckBoxLabel" runat="server" Text="Member"></asp:Label>
+                    <i>(10% off)</i>
                 </div>
             </div>
             <div class="row" style="margin: 30px 0">
@@ -57,14 +52,14 @@
                 </b>
             </div>
             <div class="row">
-                <div class="large-9 columns">
+                <div class="medium-5 columns">
                     <div class="button-group">
                         <asp:Button ID="calculateButton" runat="server" Text="Calculate" CssClass="button" OnClick="calculateButton_Click" CausesValidation="False" />
                         <asp:Button ID="orderButton" runat="server" Text="Place Order" CssClass="button" OnClick="orderButton_Click" />
                     </div>
                 </div>
-                <div class="large-3 columns text-right">
-                    <asp:Button ID="clearButton" runat="server" Text="Clear Form" CssClass="button" OnClick="clearButton_Click" CausesValidation="False"/>
+                <div class="medium-4 columns text-right">
+                    <asp:Button ID="clearButton" runat="server" Text="Clear Form" CssClass="button" OnClick="clearButton_Click" CausesValidation="False" />
                 </div>
             </div>
         </form>

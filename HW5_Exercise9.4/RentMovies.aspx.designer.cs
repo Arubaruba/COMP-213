@@ -49,6 +49,15 @@ namespace HW5_Exercise9._4 {
         protected global::System.Web.UI.WebControls.CheckBox newReleaseCheckBox;
         
         /// <summary>
+        /// newReleaseCheckBoxLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label newReleaseCheckBoxLabel;
+        
+        /// <summary>
         /// dvdFormat control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace HW5_Exercise9._4 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton dvdFormat;
+        
+        /// <summary>
+        /// dvdFormatLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label dvdFormatLabel;
         
         /// <summary>
         /// bluerayFormat control.
@@ -67,6 +85,15 @@ namespace HW5_Exercise9._4 {
         protected global::System.Web.UI.WebControls.RadioButton bluerayFormat;
         
         /// <summary>
+        /// bluerayFormatLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label bluerayFormatLabel;
+        
+        /// <summary>
         /// membershipCheckBox control.
         /// </summary>
         /// <remarks>
@@ -74,6 +101,15 @@ namespace HW5_Exercise9._4 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox membershipCheckBox;
+        
+        /// <summary>
+        /// membershipCheckBoxLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label membershipCheckBoxLabel;
         
         /// <summary>
         /// totalCostLabel control.
